@@ -1,0 +1,185 @@
+:root {
+    --dark-color: #19283fdf;
+    --red-color: rgb(163, 32, 32);
+    --wait-color: #e3e3e3;
+    --yallo-color: #ddff00c5;
+}
+
+* {
+    margin: 0;
+    padding: 0 ;
+    box-sizing: border-box;
+    transition: .4s;
+    font-family: 'Roboto', sans-serif;
+}
+h1{
+    font-family: 'Raleway', sans-serif !important;
+    font-size: 50px;
+    font-weight: 400;
+}
+a {
+    text-decoration: none;
+    font-family: 'Tilt Prism', cursive;
+}
+/* start navbar */
+.main-hader{
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.766) 99%, transparent),url(../Task-3/photo/10.jpg);
+    background-size:  cover ;
+    background-position: bottom;
+}
+.navbar .navbar-nav .nav-link {
+    font-size: 17px;
+    color: white;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--red-color);
+}
+.navbar button:focus,
+.navbar button:hover {
+    box-shadow: none;
+    color: var(--red-color);
+}
+.Search {
+    border-left: 1px solid var(--red-color);
+}
+.Search svg {
+    color: white;
+}
+/* end navbar */
+header {
+    min-height: calc(100vh - 73.5px);
+
+}
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading::after {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 1.5px;
+    left: 50%;
+    bottom: -15px;
+    transform: translateX(-50%);
+    background-color: red;
+}
+.section-1 .icon {
+    position: relative;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+}
+
+.section-1 h4 {
+    color: var(--red-color);
+}
+.owr-work {
+            background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.847) 99%, transparent), url(.//photo/1.jpg);
+                background-size: cover;
+                background-position: center;
+}
+.owr-work ul .active {
+    color: var(--red-color);
+    background-color: rosybrown;
+}
+.owr-work ul li {
+    font-size:1.1rem ;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+}
+.owr-work ul li:not(.active):hover {
+    color: var(--red-color);
+}
+.owr-work .box {
+    overflow: hidden;
+    background-color: var(--dark-color);
+    padding: 3px;
+    position: relative;
+}
+.owr-work .box::after {
+    content: attr(data-work);
+    position: absolute;
+    background-color:var(--dark-color) ;
+    top:calc(100% + 3px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    align-items: center;
+    font-size: 1.2rem;
+    color: white;
+    transition: .7s; 
+}
+.owr-work .box:hover::after{
+    top:  3px;
+}
+.game .imged img{
+    box-shadow: 0px 0px 20px 2px #00000021;
+}
+.game .container .min-p{
+    max-width: 400px;
+}
+.team{
+            background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.837) 99%, transparent), url(.//photo/9.jpg);
+                background-size: cover;
+                background-position: center;
+}
+.team .box{
+    transition: .4s;
+    box-shadow: 0px 0px 20px 2px #00000021;
+}
+.team .box:hover{
+    transform: scale(1.05);
+}
+
+.team{
+    background-color: var(--wait-color);
+}
+.team h2{
+    color: var(--red-color);
+}
+.team .box h4{
+    font-size: 1.1rem;
+    color: white;
+}
+.project{
+background-color: var(--dark-color);
+}
+.cards .card{
+    border: none;
+    border-radius: none;
+    box-shadow: 0px 9px 20px 2px #00000035
+}
+.form-end{
+    box-shadow: 0px 9px 20px 2px #000000be;
+background-color: var(--dark-color);
+}
+.form-end .container form div input[type="text"]{
+    border: none;
+    border-bottom: 2px solid white;
+}
+.form-end .container form div input[type="text"]:focus{
+    outline: none;
+}
+.form-end .container form div input::placeholder{
+    color: white;
+}
+.form-end .container form div input[type="submit"]{
+    background-color: var(--red-color);
+    color: white;
+}
+.footer{
+    background-color: var(--dark-color);
+}
+footer{
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.837) 99.99%, transparent), url(.//photo/4.jpg);
+    background-size: cover;
+    background-position:bottom;
+}
