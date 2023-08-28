@@ -23,7 +23,7 @@ font-family: 'Hind Siliguri', sans-serif;
 }
 /* start navbar */
 .main-hader{
-    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.766) 99%, transparent),url(../Task-3/photo/10.jpg);
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.766) 99%, transparent),url(.//photo/10.jpg);
     background-size:  cover ;
     background-position: bottom;
 }
