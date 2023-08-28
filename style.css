@@ -173,7 +173,7 @@ background-color: var(--dark-color);
     position: absolute;
     left: 0;
     top: 0;
-    background-color: #19283fdf;
+    background-color: var(--dark-color);
 }
 .content .container .row .text-info .div-1 .marek::before {
     width: 20%;
