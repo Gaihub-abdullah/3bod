@@ -18,12 +18,12 @@ h1{
     font-weight: 400;
 }
 a {
-    text-decoration: none;
-    font-family: 'Tilt Prism', cursive;
+    text-decoration: none !important;
+font-family: 'Hind Siliguri', sans-serif;
 }
 /* start navbar */
 .main-hader{
-    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.766) 99%, transparent),url(.//photo/10.jpg);
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.766) 99%, transparent),url(../Task-3/photo/10.jpg);
     background-size:  cover ;
     background-position: bottom;
 }
@@ -156,6 +156,36 @@ background-color: var(--dark-color);
     border: none;
     border-radius: none;
     box-shadow: 0px 9px 20px 2px #00000035
+}
+.content .container .row .text-info,
+.content .container .row .imgs {
+    box-shadow: 0px 0px 20px 2px #00000061;
+}
+.content .container .row .text-info .marek {
+    z-index: 1;
+    font-size: 10px;
+    width: 100%;
+}
+.content .container .row .text-info .marek::before {
+    content: "";
+    z-index: 3;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #19283fdf;
+}
+.content .container .row .text-info .div-1 .marek::before {
+    width: 20%;
+}
+.content .container .row .text-info .div-2 .marek::before {
+    width: 30%;
+}
+.content .container .row .text-info .div-3 .marek::before {
+    width: 60%;
+}
+.content .container .row .text-info .div-4 .marek::before {
+    width: 85%;
 }
 .form-end{
     box-shadow: 0px 9px 20px 2px #000000be;
